@@ -53,11 +53,11 @@ public class Main {
 			System.out.println(size + "/" + fSize + " (" + percentage(size, fSize) + "%)");
 		}
 
-		System.out.println("CRC32:" + dump(ByteBuffer.allocate(4).putInt((int) crc32.getValue()).array()));
-		System.out.println("CRC64:" + dump(ByteBuffer.allocate(8).putLong(crc64.getValue()).array()));
-		System.out.println("MD5:" + dump(md5.digest()));
-		System.out.println("SHA-1:" + dump(sha1.digest()));
-		System.out.println("SHA-256:" + dump(sha256.digest()));
+		System.out.println("CRC32   :" + dump(ByteBuffer.allocate(4).putInt((int) crc32.getValue()).array()));
+		System.out.println("CRC64   :" + dump(ByteBuffer.allocate(8).putLong(crc64.getValue()).array()));
+		System.out.println("MD5     :" + dump(md5.digest()));
+		System.out.println("SHA-1   :" + dump(sha1.digest()));
+		System.out.println("SHA-256 :" + dump(sha256.digest()));
 
 	}
 

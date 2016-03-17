@@ -62,9 +62,8 @@ public class Main {
 	}
 
 	static String percentage(long size, long fSize) {
-		BigDecimal sBD = BigDecimal.valueOf(size);
-		BigDecimal fBD = BigDecimal.valueOf(fSize);
-		return sBD.divide(fBD, 20, RoundingMode.DOWN).multiply(BigDecimal.valueOf(100)).intValue() + "";
+		return BigDecimal.valueOf(size).divide(BigDecimal.valueOf(fSize), 20, RoundingMode.DOWN)
+				.multiply(BigDecimal.valueOf(100)).intValue() + "";
 	}
 
 	static String dump(byte[] array) {
